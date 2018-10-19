@@ -42,7 +42,7 @@ public class FacePainterExample extends JFrame implements Runnable, WebcamPanel.
 
 		super();
 
-		troll = ImageIO.read(getClass().getResourceAsStream("/troll-face.png"));
+		troll = ImageIO.read(getClass().getResourceAsStream("/1/white-face.png"));
 
 		webcam = Webcam.getDefault();
 		webcam.setViewSize(WebcamResolution.VGA.getSize());
@@ -112,9 +112,9 @@ public class FacePainterExample extends JFrame implements Runnable, WebcamPanel.
 			int h = (int) bounds.height + dy;
 
 			g2.drawImage(troll, x, y, w, h, null);
-			g2.setStroke(STROKE);
-			g2.setColor(Color.RED);
-			g2.drawRect(x, y, w, h);
+//			g2.setStroke(STROKE);
+//			g2.setColor(Color.RED);
+//			g2.drawRect(x, y, w, h);
 		}
 	}
 

@@ -18,7 +18,7 @@ import com.github.sarxos.webcam.ds.ipcam.IpCamStorage;
 public class WebcamWebSocketsExample {
 
 	static {
-		Webcam.setDriver(new IpCamDriver(new IpCamStorage("src/main/resources/cameras.xml")));
+		Webcam.setDriver(new IpCamDriver(new IpCamStorage("webcam-capture-websockets/src/main/resources/cameras.xml")));
 	}
 
 	private static final Logger LOG = LoggerFactory.getLogger(WebcamWebSocketsExample.class);
